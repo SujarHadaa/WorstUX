@@ -185,7 +185,7 @@ function thanos(event) {
     var vanishbox = document.getElementById('vanishbox');
 
 
-    thanos.innerHTML = "<img src='/assets/gif/thanos.gif' style='width:100%; height:10em;'>";
+    thanos.innerHTML = "<img src='assets/gif/thanos.gif' style='width:100%; height:10em;'>";
 
     reg.style.transition = '4s 1s';
     reg.style.transform = 'translateX(50px)';
