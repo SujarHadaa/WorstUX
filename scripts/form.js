@@ -125,7 +125,7 @@ function turngame() {
 
 var everything = document.querySelectorAll("*");
 
-for (var i = 0; i < all.length; i++) {
+for (var i = 0; i < everything.length; i++) {
     everything[i].style.backgroundColor = "black";
     everything[i].style.color = "white"; // Set text color to white
     everything[i].style.border = "1px solid white"; // Set white border
