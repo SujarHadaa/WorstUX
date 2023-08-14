@@ -56,23 +56,23 @@ input:checked+label {
 
 .target:nth-last-of-type(1) {
     animation: flyX 1s linear 0s infinite;
-    cursor: url(/assets/Image/aim.png), text;
+    cursor: url(https://sujarhadaa.github.io/WorstUX/assets/Image/aim.png), text;
 }
 
 .target:nth-last-of-type(2) {
     animation: flyX 1s linear 1s infinite;
-    cursor: url(/assets/Image/aim.png), text;
+    cursor: url(https://sujarhadaa.github.io/WorstUX/assets/Image/aim.png), text;
 }
 
 .target:nth-last-of-type(3) {
     animation: flyX 1s linear 2s infinite;
-    cursor: url(/assets/Image/aim.png), text;
+    cursor: url(https://sujarhadaa.github.io/WorstUX/assets/Image/aim.png), text;
 
 
 }
 
 .course {
-    cursor: url(/assets/Image/aim.png), text;
+    cursor: url(https://sujarhadaa.github.io/WorstUX/assets/Image/aim.png), text;
     overflow: hidden;
 }
 
@@ -84,7 +84,7 @@ input+label {
     z-index: 3;
     width: 100px;
     height: 100px;
-    background: url(/assets/Image/target.png) no-repeat;
+    background: url(https://sujarhadaa.github.io/WorstUX/assets/Image/target.png) no-repeat;
 
 }
 
