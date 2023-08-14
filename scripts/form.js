@@ -58,7 +58,7 @@ function generateYearRadioButtons(startYear, endYear) {
         radioDiv.appendChild(radioInput);
         radioDiv.appendChild(radioLabel);
 
-        // Create the span element for dynamic text
+
         const span = document.createElement("span");
         radioDiv.appendChild(span);
 
@@ -137,8 +137,8 @@ var everything = document.querySelectorAll("*");
 
 for (var i = 0; i < everything.length; i++) {
     everything[i].style.backgroundColor = "black";
-    everything[i].style.color = "white"; // Set text color to white
-    everything[i].style.border = "1px solid white"; // Set white border
+    everything[i].style.color = "white";
+    everything[i].style.border = "1px solid white";
     if (everything[i] !== document.body) {
         everything[i].style.zIndex = "3";
     }
@@ -148,7 +148,7 @@ for (var i = 0; i < everything.length; i++) {
 
 
 
-var isDarkMode = false; // Keep track of the dark mode state
+var isDarkMode = false;
 
 function turnEverythingBlack() {
     var everything = document.querySelectorAll("*");
@@ -156,7 +156,7 @@ function turnEverythingBlack() {
 
 
     if (isDarkMode) {
-        // Revert to normal styles
+
         for (var i = 0; i < everything.length; i++) {
             everything[i].style.backgroundColor = "";
             everything[i].style.color = "";
@@ -165,11 +165,11 @@ function turnEverythingBlack() {
         }
         body.classList.add('body');
     } else {
-        // Turn everything to black
+
         for (var i = 0; i < everything.length; i++) {
             everything[i].style.backgroundColor = "black";
-            everything[i].style.color = "black"; // Set text color to white
-            everything[i].style.border = "1px solid black"; // Set white border
+            everything[i].style.color = "black";
+            everything[i].style.border = "1px solid black";
             everything[i].style.backgroundImage = "";
             if (everything[i] !== document.body) {
                 everything[i].style.zIndex = "3";
@@ -178,7 +178,7 @@ function turnEverythingBlack() {
         body.classList.remove('body');
     }
 
-    // Toggle the dark mode state
+
     isDarkMode = !isDarkMode;
 }
 
@@ -219,4 +219,6 @@ function thanos(event) {
         window.location.href = "//www.youtube.com/watch?v=dQw4w9WgXcQ";
     }, 5000);
 }
+
+
 
