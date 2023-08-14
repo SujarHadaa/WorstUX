@@ -1,0 +1,97 @@
+#emailcheck:hover {
+    cursor: not-allowed;
+}
+
+.letter {
+    position: absolute;
+    top: 0;
+    left: calc(10% + (80% * var(--random-left)));
+    font-size: 2em;
+}
+
+.playfield {
+    position: relative;
+    height: 6em;
+    width: 100%;
+}
+
+@keyframes flyX {
+    0% {
+        left: 100%;
+        top: 10%;
+
+    }
+
+    25% {
+        left: 75%;
+        top: 20%;
+
+    }
+
+    50% {
+        left: 50%;
+        top: 100%;
+
+    }
+
+    75% {
+        left: 25%;
+        top: 20%;
+
+    }
+
+    100% {
+        left: -20%;
+        top: 50%;
+
+    }
+
+}
+
+input:checked+label {
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -2;
+}
+
+.target:nth-last-of-type(1) {
+    animation: flyX 2s linear 2s infinite;
+    cursor: url(assets\Image\aim.png), text;
+}
+
+.target:nth-last-of-type(2) {
+    animation: flyX 2s linear 3s infinite;
+    cursor: url(assets\Image\aim.png), text;
+}
+
+.target:nth-last-of-type(3) {
+    animation: flyX 2s linear 4s infinite;
+    cursor: url(assets\Image\aim.png), text;
+
+
+}
+
+#course {
+    cursor: url(assets\Image\aim.png);
+
+}
+
+
+input+label {
+
+    position: absolute;
+    left: -100px;
+    z-index: 3;
+    width: 100px;
+    height: 100px;
+    background: url(assets\Image\target.png) no-repeat left center;
+
+}
+
+
+
+input:checked+label {
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -2;
+}

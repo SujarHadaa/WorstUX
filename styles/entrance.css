@@ -1,0 +1,13 @@
+.overlay-gif {
+    position: relative;
+    z-index: 1;
+}
+
+.overlay-span {
+    position: absolute;
+    top: 54px;
+    left: 54px;
+    background-color: rgb(255, 255, 255);
+    padding: 0px;
+    z-index: 2;
+}

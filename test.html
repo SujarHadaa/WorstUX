@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follow Mouse</title>
+    <style>
+        #follower {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            border-radius: 50%;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="follower"></div>
+    <script>
+        const follower = document.getElementById("follower");
+
+        document.addEventListener("mousemove", (event) => {
+            const mouseX = event.clientX;
+            const mouseY = event.clientY;
+
+            follower.style.left = mouseX + "px";
+            follower.style.top = mouseY + "px";
+        });
+    </script>
+</body>
+
+</html>
