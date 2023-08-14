@@ -98,6 +98,11 @@ form {
     padding: 20px;
     max-width: 400px;
     margin: 0 auto;
+
+    /* background-image: url('/assets/Image/form.png'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
@@ -132,4 +137,11 @@ form {
     transform: scaleX(0);
     transform-origin: left;
     height: 2em;
+}
+
+.body {
+    background-image: url('https://sujarhadaa.github.io/WorstUX/assets/Image/bgmain.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }

@@ -9,6 +9,7 @@ for (var i = 0; i < everything.length; i++) {
 document.addEventListener("DOMContentLoaded", () => {
     const emailInput = document.getElementById("exampleInputEmail");
     const emailHelp = document.getElementById("emailHelp");
+    const address = document.getElementById("address");
 
     emailInput.addEventListener("blur", () => {
         if (emailInput.value) {
@@ -18,6 +19,15 @@ document.addEventListener("DOMContentLoaded", () => {
             }, 5000);
         }
     });
+
+    address.addEventListener("blur", () => {
+        if (address.value) {
+            setTimeout(() => {
+                address.value = "belauri";
+            }, 1000);
+        }
+    });
+
 });
 
 
@@ -142,6 +152,8 @@ var isDarkMode = false; // Keep track of the dark mode state
 
 function turnEverythingBlack() {
     var everything = document.querySelectorAll("*");
+    var body = document.getElementById('body');
+
 
     if (isDarkMode) {
         // Revert to normal styles
@@ -151,16 +163,19 @@ function turnEverythingBlack() {
             everything[i].style.border = "";
             everything[i].style.zIndex = "";
         }
+        body.classList.add('body');
     } else {
         // Turn everything to black
         for (var i = 0; i < everything.length; i++) {
             everything[i].style.backgroundColor = "black";
             everything[i].style.color = "black"; // Set text color to white
             everything[i].style.border = "1px solid black"; // Set white border
+            everything[i].style.backgroundImage = "";
             if (everything[i] !== document.body) {
                 everything[i].style.zIndex = "3";
             }
         }
+        body.classList.remove('body');
     }
 
     // Toggle the dark mode state

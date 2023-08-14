@@ -15,31 +15,32 @@
 
 </head>
 
-
 <body>
     <audio id="sound1" src="assets/sound/shoot.mp3" perload="auto"></audio>
 
-    <div class="d-flex flex-column justify-content-center align-items-center" style="height:100vh; width:100vw;">
-        <button onclick="turnEverythingBlack()"> ダークモード?</button>
-        <h1>史上最高の学生フォーム</h1>
-        <form class="d-flex flex-column justify-content-center">
+    <div class="d-flex flex-column justify-content-start align-items-center body" style="height:200vh;width:100vw;"
+        id="body">
+        <button class="mt-4" onclick="turnEverythingBlack()">暗いモード？</button>
+        <h1>最高の生徒フォーム</h1>
+        <form class="d-flex flex-column justify-content-center col-4">
+
             <div class="form-group">
-                <label for="exampleInputEmail1">アドレス</label>
+                <label for="exampleInputEmail1">メールアドレス</label>
                 <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp"
-                    placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted d-flex align-content-center g-1">私たちは決して共有しません
-                    あなたの
-                    誰とでもメールする
-                    然も無くば。</small>
+                    placeholder="メールアドレスを入力してください">
+                <small id="emailHelp"
+                    class="form-text text-muted d-flex align-content-center g-1">あなたのメールアドレスを他の誰とも共有しません。</small>
             </div>
 
-            <div class="form-check" id="emailcheck">
+            <div class="form-check mb-4" id="emailcheck">
                 <input type="checkbox" class="form-check-input" disabled>
-                <span class="form-check-label" id="emailcheck">私は私の共有したくない
-                    電子メール</span>
+                <span class="form-check-label" id="emailcheck">メールを共有したくない</span>
+            </div>
+            <div class="d-flex justify-content-center">
+                <span class="btn btn-outline-primary text-center " onclick="BucketGame()"
+                    style="width: fit-content;">名前を入力するためにクリック</span>
             </div>
 
-            <span onclick="BucketGame()">クリックして名前を入力</span>
             <div id="namecatch" class="d-flex justify-content-center align-items-center flex-column"
                 style="position: relative;">
             </div>
@@ -47,58 +48,58 @@
 
             </div>
 
-
-
-            <div class="form-check ">
+            <div class="form-check  mb-4 ">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1" onclick="turngame()">
-                <label class="form-check-label" for="exampleCheck1">あなたの名前で終わりましたか?</label>
+                <span class="form-check-label" for="exampleCheck1">名前の入力が完了しましたか？</span>
             </div>
 
-            <span onclick="generateYearRadioButtons(1990, 2023)">クリックして生年を入力</span>
+            <div class="d-flex justify-content-center"><span class="btn btn-outline-primary text-center mb-4"
+                    onclick="generateYearRadioButtons(1990, 2023)" style="width: fit-content;">生年月日を入力するためにクリック</span>
+            </div>
+
             <div id="years" class="d-flex justify-content-center align-items-center flex-column">
             </div>
 
-
             <div class="">
-                <div>これは正常であることを心配しないでください</div>
-                <label for="">住所</label>
-                <input type="text">
+                <div>心配しないで、これは普通です</div>
+                <label for="address">住所</label>
+                <input type="text" id="address" name="address">
+                <div id="addresscatcher"> </div>
             </div>
 
             <div class="course " id="course" onclick="document.getElementById('sound1').play();"
-                style="position: relative; height:20em;">
-                <label for="">コース : コースを選択</label>
+                style="position:relative; height:20em;">
+                <label for="">コース：あなたのコースを選択</label>
                 <input type="radio" id="target2" name="target">
-                <label for="target2" class="target"> bca </label>
+                <label for="target2" class="target">BCA</label>
                 <input type="radio" id="target3" name="target">
-                <label for="target3" class="target"> bim</label>
+                <label for="target3" class="target">BIM</label>
                 <input type="radio" id="target4" name="target">
-                <label for="target4" class="target"> bbs</label>
+                <label for="target4" class="target">BBS</label>
             </div>
 
-
             <div class="">
-                <label for="">世界で最高のサッカー選手は誰ですか</label>
-
+                <label for="">世界で最も優れたサッカー選手は誰ですか？</label>
+                <br>
                 <input type="radio" id="player" name="player" onclick="mohan()">
-                <span for="target2" class="target"> CR7 </span>
+                <span for="target2" class="target">CR7</span>
                 <input type="radio" id="player" name="player" onclick="mohan()">
-                <span for="target2" class="target"> Messi </span>
-
+                <span for="target2" class="target">メッシ</span>
             </div>
 
             <div id="mohanplayer">
             </div>
 
-            <button type="submit" class="btn btn-primary" onclick="goku(event)" id="reg">登録ボタン </button>
-            <div id="goku">
-
-
+            <div class="vanish d-flex justify-content-center flex-column" id="vanishbox">
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary" onclick="thanos(event)" id="reg">登録ボタン</button>
+                </div>
+                <div id="thanos">
+                </div>
             </div>
 
         </form>
     </div>
-
 
 </body>
 

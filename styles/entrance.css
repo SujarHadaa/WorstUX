@@ -55,3 +55,10 @@ button {
     margin-top: 20px;
     cursor: pointer;
 }
+
+body {
+    background-image: url('https://sujarhadaa.github.io/WorstUX/assets/Image/bgmain.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

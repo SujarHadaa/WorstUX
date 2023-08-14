@@ -33,3 +33,11 @@ body {
     background-color: #007bff;
     border: none;
 }
+
+
+body {
+    background-image: url('https://sujarhadaa.github.io/WorstUX/assets/Image/bgmain.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
