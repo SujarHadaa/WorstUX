@@ -23,6 +23,6 @@ function handleSubmit(event) {
 
 
 function openIndexHTML() {
-    window.location.href = "index.html";
+    window.location.href = "entrance.html";
 }
 
