@@ -173,10 +173,11 @@ function turnEverythingBlack() {
 function mohan() {
 
     var mohanplayer = document.getElementById('mohanplayer');
-    mohanplayer.innerHTML = "<img src='assets/Image/mohanplayer.png' style='width:100%; height:10em;'>";
+    mohanplayer.innerHTML = "<img src='assets/Image/mohanplayer.png' style='width:100%; height:20em;'>";
 }
 
 function thanos(event) {
+
     event.preventDefault();
 
     var reg = document.getElementById('reg');
@@ -184,7 +185,7 @@ function thanos(event) {
     var vanishbox = document.getElementById('vanishbox');
 
 
-    thanos.innerHTML = "<img src='assets/gif/thanos.gif' style='width:100%; height:10em;'>";
+    thanos.innerHTML = "<img src='/assets/gif/thanos.gif' style='width:100%; height:10em;'>";
 
     reg.style.transition = '4s 1s';
     reg.style.transform = 'translateX(50px)';
@@ -196,7 +197,11 @@ function thanos(event) {
     }, 1500);
 
     setTimeout(() => {
-        vanishbox.innerHTML = "<div>No place for people who dont conisder Mohan Adhikari the GOAT</div> <img src='assets/Image/yabi.png' style='heigt:10em; width:100%;'>";
+        vanishbox.innerHTML = "<div>No place for people who dont conisder Mohan Adhikari the GOAT</div>";
     }, 4000);
+
+    setTimeout(() => {
+        window.location.href = "//www.youtube.com/watch?v=dQw4w9WgXcQ";
+    }, 5000);
 }
 
