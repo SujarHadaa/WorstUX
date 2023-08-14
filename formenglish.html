@@ -19,10 +19,11 @@
 <body>
     <audio id="sound1" src="assets/sound/shoot.mp3" perload="auto"></audio>
 
-    <div class="d-flex flex-column justify-content-center align-items-center" style="height:100vh; width:100vw;">
-        <button onclick="turnEverythingBlack()"> Dark Mode ?</button>
+    <div class="d-flex flex-column justify-content-start align-items-center" style="height:200vh;width:100vw;">
+        <button class="mt-4" onclick="turnEverythingBlack()"> Dark Mode ?</button>
         <h1>Best Student Form Ever</h1>
-        <form class="d-flex flex-column justify-content-center">
+        <form class="d-flex flex-column justify-content-center col-4">
+
             <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp"
@@ -51,7 +52,7 @@
 
             <div class="form-check ">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1" onclick="turngame()">
-                <label class="form-check-label" for="exampleCheck1">Done with your name ?</label>
+                <span class="form-check-label" for="exampleCheck1">Done with your name ?</span>
             </div>
 
             <span onclick="generateYearRadioButtons(1990, 2023)">click to enter year of birth</span>
@@ -66,7 +67,7 @@
             </div>
 
             <div class="course " id="course" onclick="document.getElementById('sound1').play();"
-                style="position: relative; height:20em;">
+                style="position:relative; height:20em;">
                 <label for="">Course : Select Your Course</label>
                 <input type="radio" id="target2" name="target">
                 <label for="target2" class="target"> bca </label>
@@ -79,7 +80,7 @@
 
             <div class="">
                 <label for="">who is the best football player in the world</label>
-
+                <br>
                 <input type="radio" id="player" name="player" onclick="mohan()">
                 <span for="target2" class="target"> CR7 </span>
                 <input type="radio" id="player" name="player" onclick="mohan()">
@@ -90,10 +91,13 @@
             <div id="mohanplayer">
             </div>
 
-            <button type="submit" class="btn btn-primary" onclick="goku(event)" id="reg">Register Button </button>
-            <div id="goku">
-
-
+            <div class="vanish d-flex justify-content-center flex-column" id="vanishbox">
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary" onclick="thanos(event)" id="reg">Register Button
+                    </button>
+                </div>
+                <div id="thanos">
+                </div>
             </div>
 
         </form>

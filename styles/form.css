@@ -55,25 +55,25 @@ input:checked+label {
 }
 
 .target:nth-last-of-type(1) {
-    animation: flyX 2s linear 2s infinite;
-    cursor: url(assets\Image\aim.png), text;
+    animation: flyX 1s linear 0s infinite;
+    cursor: url(/assets/Image/aim.png), text;
 }
 
 .target:nth-last-of-type(2) {
-    animation: flyX 2s linear 3s infinite;
-    cursor: url(assets\Image\aim.png), text;
+    animation: flyX 1s linear 1s infinite;
+    cursor: url(/assets/Image/aim.png), text;
 }
 
 .target:nth-last-of-type(3) {
-    animation: flyX 2s linear 4s infinite;
-    cursor: url(assets\Image\aim.png), text;
+    animation: flyX 1s linear 2s infinite;
+    cursor: url(/assets/Image/aim.png), text;
 
 
 }
 
-#course {
-    cursor: url(assets\Image\aim.png);
-
+.course {
+    cursor: url(/assets/Image/aim.png), text;
+    overflow: hidden;
 }
 
 
@@ -84,14 +84,52 @@ input+label {
     z-index: 3;
     width: 100px;
     height: 100px;
-    background: url(assets\Image\target.png) no-repeat left center;
+    background: url(/assets/Image/target.png) no-repeat;
 
 }
 
 
 
-input:checked+label {
+
+form {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+
+/* 
+
+.vanish:hover button {
+    transition: 4s;
+    transition-delay: 1s;
+    transform: translateX(50px);
     opacity: 0;
-    transition: 0.5s;
-    z-index: -2;
+    filter: blur(10px);
+}
+
+.vanish img {
+    width: 100%;
+    height: 2em;
+   
+   
+}
+
+.vanish:hover img {
+    transform: translateX(400px) scale(1);
+} */
+
+.vanish {
+    position: relative;
+    transform-origin: left;
+}
+
+.noise {
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 2em;
 }

@@ -12,35 +12,22 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
     <script src="scripts/entrance.js"></script>
-
 </head>
 
 <body>
-    <div class="d-flex justify-content-center align-items-center flex-column" style="height:100vh; width:100vw;">
-
-        <h2 class="text-bg-danger"> Contains Loud Noises</h2>
-        <form class="d-flex flex-column justify-content-center">
-            <h1> Please use ear phones </h1>
-            <span class="bg-primary-subtle"> Are you 18+ ? </span>
-
-            <div class="d-flex justify-content-center flex-column">
-                <div>
-                </div>
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="form-container">
+            <h2 class="text-center text-danger">Contains Loud Noises</h2>
+            <form class="d-flex flex-column align-items-center">
+                <h3>Please Use Earphones</h3>
+                <span>Are you 18+?</span>
                 <input id="age" type="text" placeholder="Enter Yes">
-            </div>
-            <button onclick="handleSubmit(event)" ondblclick="openIndexHTML()">Submit</button>
-            <div id="wdc">
-
-            </div>
-            <div id="marioplatform" class="position-relative d-flex justify-content-center">
-
-            </div>
-        </form>
-
-
-
+                <button class="mt-2" onclick="handleSubmit(event)" ondblclick="openIndexHTML()">Submit</button>
+                <div id="wdc"></div>
+                <div id="marioplatform" class="position-relative d-flex justify-content-center"></div>
+            </form>
+        </div>
     </div>
-
 </body>
 
 </html>
